@@ -7,28 +7,28 @@
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
 </head>
-<body>
-<header>
-    <h1>Home</h1>
-    <img src="assets/img/wt-final-site-logo.png" alt="Site Logo">
+<body class="h-screen flex flex-col">
+<header class="bg-orange-300 py-4 text-center">
+    <h1 class="text-3xl font-bold">Home</h1>
+    <img src="assets/img/wt-final-site-logo.png" alt="Site Logo" class="h-12 w-12 mx-auto">
 </header>
 
-<nav>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./contact.html">Contact</a>
-    <a href="./mywork.html">MyWork</a>
-    <a href="./projects.html">Project</a>
-    <a href="./resume.html">Resume</a>
+<nav class="by-gray-200 py-2 text-center">
+    <a href="./index.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Home</a>
+    <a href="./about.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">About</a>
+    <a href="./contact.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Contact</a>
+    <a href="./mywork.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">MyWork</a>
+    <a href="./projects.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Project</a>
+    <a href="./resume.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Resume</a>
 </nav>
 
-<main>
-    <section>
-        <img src="assets/img/wt-final-image1.png" alt="Site Image">
+<main class="flex-1 flex flex-col md:flex-row justify-center">
+    <section class="bg-white p-4 rounded shadow-md">
+        <img src="assets/img/wt-final-image1.png" alt="Site Image" class="w-full h-64 object-cover">
     </section>
 
-    <section>
-        <h1>Welcome to Our Website</h1>
+    <section class="bg-white p-4 rounded shadow-md w-full md:w-1/2">
+        <h1 class="text-2xl font-bold">Welcome to Our Website</h1>
         <p>Thank you for visiting our website. Here at [Your Organization Name], we are dedicated to providing top-notch education and training in the field of information technology. As a proud student of TAFE IT Programming Certificate 4, I am excited to share my journey of learning and discovery with you.</p>
         <p>Through this program, I am gaining comprehensive knowledge and practical skills in various programming languages and technologies, including HTML, CSS, and JavaScript. These fundamental skills are essential for anyone aspiring to thrive in the dynamic world of web development and software engineering.</p>
         <p>Whether you are a fellow learner, an industry professional, or simply curious about the world of IT, I invite you to explore our website and join me on this exciting journey of exploration, growth, and innovation.</p>
@@ -36,7 +36,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="by-gray-200 py-2 text-center">
     &copy; Copyright 2023 Adrian Gould and Chloe GU. All rights reserved.
 </footer>
 </body>
