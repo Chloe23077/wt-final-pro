@@ -7,49 +7,61 @@
     <title>Contact Page</title>
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
 </head>
-<body>
-<header>
-    <h1>Home</h1>
-    <img src="assets/img/wt-final-site-logo.png" alt="Site Logo">
+<body class="h-screen flex flex-col bg-amber-50">
+<header class="bg-orange-300 py-4 text-center">
+    <h1 class="text-3xl font-bold">Contect</h1>
+    <img src="assets/img/wt-final-site-logo.png" alt="Site Logo" class="h-12 w-12 mx-auto">
 </header>
 
-<nav>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./contact.html">Contact</a>
-    <a href="./mywork.html">MyWork</a>
-    <a href="./projects.html">Project</a>
-    <a href="./resume.html">Resume</a>
+<nav class="by-gray-200 py-2 text-center">
+    <a href="./index.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Home</a>
+    <a href="./about.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">About</a>
+    <a href="./contact.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Contact</a>
+    <a href="./mywork.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">MyWork</a>
+    <a href="./projects.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Project</a>
+    <a href="./resume.html" class="text-orange-500 hover:text-gray-900 duration-300 ease-in-out mx-4 px-2">Resume</a>
 </nav>
-<main>
-    <section>
-        <h1>Contect Details</h1>
-        <ul>
-            <li>Name: Chloe Gu</li>
-            <li>Email: 20114937@tafe.wa.edu.au</li>
-            <li>github: <a href="https://github.com/Chloe23077">https://github.com/Chloe23077</a></li>
-        </ul>
+<main class="flex flex-col items-center justify-center space-y-8">
+    <section class="flex flex-col md:flex-row items-center w-full justify-center">
+        <div class="bg-blue-100 p-4 rounded-lg shadow-lg">
+            <h1 class="text-lg font-semibold mb-2">Contect Details</h1>
+            <ul>
+                <li>Name: Chloe Gu</li>
+                <li>Email: 20114937@tafe.wa.edu.au</li>
+                <li>github: <a href="https://github.com/Chloe23077">https://github.com/Chloe23077</a></li>
+            </ul>
+        </div>
     </section>
 
     <section>
-        <img src="assets/img/wt-final-image2.png" alt="Site Image">
+        <img src="assets/img/wt-final-image2.png" alt="Site Image" class="max-w-xs rounded-lg shadow-lg">
     </section>
 
-    <section>
-        <h1>Contect Form</h1>
-        <form action="/submit" method="post">
-            <label for="First_name">First Name:</label><br>
-            <input type="text" id="First_name" name="First_name"><br>
-            <label for="Last_name">Last Name:</label><br>
-            <input type="text" id="Last_name" name="Last_name"><br>
-            <label for="Email">Email:</label><br>
-            <input type="Email" id="Email" name="Email"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+    <section class="flex space-x-4 items-center border border-amber-500 rounded-lg shadow-lg p-4">
+        <div>
+            <h1 class="text-lg font-semibold mb-2">Contect Form</h1>
+            <form action="/submit" method="post" class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <label for="First_name" class="w-24">First Name:</label>
+                    <input type="text" id="First_name" name="First_name" class="flex-1 border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <label for="Last_name" class="w-24">Last Name:</label>
+                    <input type="text" id="Last_name" name="Last_name" class="flex-1 border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <label for="Email" class="w-24">Email:</label>
+                    <input type="Email" id="Email" name="Email" class="flex-1 border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="Submit" class="mt-4 px-4 py-2 border border-gray-300 bg-emerald-700 text-white rounded-lg hover:bg-emerald-300 cursor-pointer">
+                </div>
+            </form>
+        </div>
     </section>
 </main>
 
-<footer>
+<footer class="by-gray-200 py-2 text-center">
     &copy; Copyright 2023 Adrian Gould and Chloe GU. All rights reserved.
 </footer>
 
